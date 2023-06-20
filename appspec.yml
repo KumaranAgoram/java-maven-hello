@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: <TASK_DEFINITION>
+        TaskDefinition: "arn:aws:ecs:us-east-1:502433561161:task-definition/362255_Bayer_Tsk:2"
         LoadBalancerInfo:
-          ContainerName: "sample-website"
-          ContainerPort: 80
+          ContainerName: "tomcatapp"
+          ContainerPort: 8080
